@@ -32,6 +32,11 @@ Include the header normally in most files, but **define `TUC_IMPLEMENTATION` in 
 #include "tuc_static.h"
 ```
 
+### Compilation
+
+Compile with the `-D_POSIX_C_SOURCE=199309L` flag:
+```bash
+
 ### Example Usage
 
 ```c
