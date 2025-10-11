@@ -1,29 +1,4 @@
 /*
- * TUC - Time Ur Code
- * A simple, single-header timer library for measuring elapsed time.
- *
- * USAGE:
- *   Simply include this header and use directly. All functions are inline.
- *     #include "tuc_static.h"
- *
- * EXAMPLE:
- *     #include "tuc_static.h"
- *
- *   int main(void) {
- *       TucTimer timer = tuc_create();
- *       if (!timer) return 1;
- *
- *       tuc_start(timer);
- *       // ... do work ...
- *       tuc_end(timer);
- *
- *       printf("Elapsed: %.6f seconds\n", tuc_result(timer));
- *       tuc_destroy(timer);
- *       return 0;
- *   }
- */
-
-/*
  * MIT License
  *
  * Copyright (c) 2025 mdether7
