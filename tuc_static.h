@@ -33,6 +33,8 @@ extern "C" {
 #include <time.h>
 #include <stdlib.h>
 
+#define TUC_ELAPSED_ERROR -1.0
+
 struct TimerInternal {
     struct timespec start;
     struct timespec end;
@@ -83,7 +85,7 @@ static inline double
 tuc_result(TucTimer timer)
 {
     if (!timer)
-        return 0.0;
+        return TUC_ELAPSED_ERROR;
 
     return (timer->end.tv_sec - timer->start.tv_sec) +
            (timer->end.tv_nsec - timer->start.tv_nsec) / 1e9;
