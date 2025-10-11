@@ -36,7 +36,7 @@ Include the header normally in most files, but **define `TUC_IMPLEMENTATION` in 
 
 This library requires POSIX features. Compile with the following flag:
 ```bash
-gcc -std=c99 -D_POSIX_C_SOURCE=199309L -o myprogram myprogram.c
+gcc -D_POSIX_C_SOURCE=199309L -o myprogram myprogram.c
 ```
 
 ### Example Usage
