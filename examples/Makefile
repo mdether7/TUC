@@ -1,5 +1,5 @@
 # Flags
-CFLAGS += -std=c99 -Wall -Wextra
+CFLAGS += -std=c99 -Wall -Wextra -D_DEFAULT_SOURCE
 CC := gcc
 
 all: generate impl static
