@@ -2,7 +2,7 @@
 
 #include "../tuc_static.h"
 
-#define NUMBER_OF_MALLOCS 10000
+#define NUMBER_OF_MALLOCS 1000000
 
 extern void memory_work(size_t alloc_count); 
 
